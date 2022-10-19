@@ -1,0 +1,359 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+  <!-- Owl Carousel min css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Owl Carousel theme css-->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white  " style="z-index: 1000;">
+        <!-- Container wrapper -->
+        <div class="container">
+          <!-- Toggle button -->
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+    
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="#">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/natural-herbal-skincare-logo-design-template-9e1b5c793dd0cb7059838961b923c96d_screen.jpg?ts=1597899973"
+                height="55" alt="MDB Logo" loading="lazy" />
+            </a>
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+    
+    
+    
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+    
+          <!-- Right elements -->
+          <div class="d-flex align-items-center">
+            <!-- Search -->
+            <a class="link-secondary me-3 " href="#">
+              <i class="fas fa-search"></i>
+            </a>
+    
+            <!-- User -->
+            <a class="link-secondary me-3  hidden-arrow " href="#" id="navbarDropdownMenuLink" id="modalLogIn"
+              data-mdb-toggle="modal" data-mdb-target="#logInModal">
+    
+    
+              <i class="fas fa-user"></i>
+    
+            </a>
+    
+    
+            <!-- Shopping -->
+            <a class="d-flex align-items-center hidden-arrow " href="cart.html" id="navbarDropdownMenuAvatar">
+              <i class="fas fa-shopping-bag">
+                <span class="badge rounded-pill badge-notification bg-danger" ></span>
+              </i>
+    
+            </a>
+    
+    
+          </div>
+          <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+
+    
+        <!-- breadcrumbs -->
+        <!-- <section class="breadcrumbs separator-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="listing-sidebar.html">Shop</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section> -->
+    
+        <!-- hero -->
+    
+        <section>
+          <div class="container my-5">
+           
+
+            <div class="row">
+              <div class="col text-center">
+                <!-- <h1>Checkout</h1> -->
+                <h1 class="fw-bold mb-0 text-black">Checkout</h1>
+
+              </div>
+
+              
+            </div>
+          </div>
+      
+        </section>
+    
+        <section class="no-overflow pt-0">
+          <div class="container">
+            <div class="row gutter-4 justify-content-between">
+    
+    
+              <div class="col-lg-8">
+    
+                <!-- delivery -->
+                <div class="row align-items-end mb-2">
+                  <div class="col-md-6">
+                    <h2 class="h3 mb-0"> Address</h2>
+                  </div>
+               
+                </div>
+                <div class="row gutter-1 mb-6">
+                  <div class="form-group col-md-6">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="">
+                  </div>
+                  <div class="form-group col">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" class="form-control" id="companyName" placeholder="">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="country">Country</label>
+                    <input type="text" class="form-control" id="country" placeholder="">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="postcode">Postcode</label>
+                    <input type="text" class="form-control" id="postcode" placeholder="">
+                  </div>
+                  <div class="form-group col-md-8">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="">
+                  </div>
+                </div>
+    
+                <!-- payment -->
+                <div class="row align-items-end mb-2">
+                  <div class="col-md-6">
+                    <h2 class="h3 mb-0">Payment</h2>
+                  </div>
+                 
+                </div>
+                <div class="row gutter-1 mb-6">
+                  <div class="col-12 pb-1">
+                    
+                  </div>
+                  <div class="col-12">
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row gutter-1">
+                          <div class="form-group col-12">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="icon-credit-card"></i></span>
+                              </div>
+                              <input type="tel" class="form-control" placeholder="Card Number" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="nameOnCard">Name on Card</label>
+                            <input type="text" class="form-control" id="nameOnCard" placeholder="">
+                          </div>
+                          <div class="form-group col-md-3">
+                            <label for="month">Month</label>
+                            <input type="date" class="form-control" id="month">
+                          </div>
+                          <div class="form-group col-md-3">
+                            <label for="cvv">CVV</label>
+                            <input type="password" class="form-control" id="cvv" placeholder="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row gutter-1">
+                          <div class="form-group col-md-8">
+                            <input type="email" class="form-control" id="mail" placeholder="Email">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <a href="#!" class="btn btn-block btn-secondary">Pay with paypal</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="custom-control custom-switch mb-2">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                      <label class="custom-control-label text-muted" for="customSwitch1">Billing address same as delivery.</label>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- shipping -->
+                <div class="row align-items-end mb-2">
+                  <div class="col-md-6">
+                    <h2 class="h3 mb-0">Shipping</h2>
+                  </div>
+                </div>
+                <div class="row gutter-1">
+                  <div class="col-md-6">
+                    <div class="custom-control custom-choice">
+                      <input type="radio" name="choice-shipping" class="custom-control-input" id="choice-shipping-1">
+                      <label class="custom-control-label text-dark" for="choice-shipping-1">
+                        <span class="d-flex justify-content-between mb-1 eyebrow">Standard <span class="text-muted">Free</span></span>
+                        Estimated 10-20 days shipping. Lorem Ipsum is simply dummy text of the printing and typesetting.
+                      </label>
+                      <span class="choice-indicator"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="custom-control custom-choice">
+                      <input type="radio" name="choice-shipping" class="custom-control-input" id="choice-shipping-2">
+                      <label class="custom-control-label text-dark" for="choice-shipping-2">
+                        <span class="d-flex justify-content-between mb-1 eyebrow">Express <span class="text-muted">$49</span></span>
+                        Estimated 10-20 days shipping. Lorem Ipsum is simply dummy text of the printing and typesetting.
+                      </label>
+                      <span class="choice-indicator"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+    
+              <aside class="col-lg-4">
+                <div class="row">
+    
+                  <!-- order preview -->
+                 
+    
+                  <!-- order summary -->
+                  <div class="col-12 mt-1">
+                    <div class="card card-data bg-light">
+                      <div class="card-header py-2 px-3">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <h3 class="fs-18 mb-0">Order Summary</h3>
+                          </div>
+                          <div class="col text-right">
+                            <h6 class="mb-0"><a href="cart.html" class="text-body"><i
+                                class="fas fa-long-arrow-alt-left me-2"></i>Edit your order</a></h6>
+                            <!-- <a href="cart.html" class="underline eyebrow">Edit</a> -->
+                          </div>
+
+                          <!-- <div class="pt-5">
+                            <h6 class="mb-0"><a href="shop.html" class="text-body"><i
+                                  class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <ul class="list-group list-group-minimal">
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Subtotal
+                            <span>$418</span>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Shipping
+                            <span>Free</span>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Discount
+                            <span>-25%</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card-footer py-2">
+                        <ul class="list-group list-group-minimal">
+                          <li class="list-group-item d-flex justify-content-between align-items-center text-dark fs-18">
+                            Total
+                            <span>$313,5</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- place order -->
+                  <div class="col-12 mt-1">
+                    <!-- <a href="#!" class="btn btn-primary btn-lg btn-block">Place Order</a> -->
+                    <a href="checkout.html" type="button" class="btn btn-dark btn-block btn-lg"
+                    data-mdb-ripple-color="dark">
+                    Buy now
+                    </a>
+                  </div>
+    
+                </div>
+              </aside>
+    
+            </div>
+          </div>
+        </section>
+    
+    
+         <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+
+  <!-- Jqery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+  <!-- Carousel -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./productsArray.js"></script>
+  <script src="./shared.js"></script>
+  <script src="./homeScript.js"></script>
+  <script src="./cart.js"></script>
+    
+</body>
+</html>

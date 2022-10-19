@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.45rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1d1d1d;
+} */
+
+/* h1 {
+    color: #d8d8d8;
+} */
+
+.navbar {
+    font-size: 16px;
+  
+}
+.navbar-light .navbar-nav .nav-link {
+
+    padding: 0 10px;
+    color: black;
+    transition: 0.3s ease;
+    font-size: 16px;
+    
+
+}
+
+
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active,
+i:hover {
+    color: coral;
+}
+
+i {
+    font-size: 1.2rem;
+    padding: 0 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: rgb(53, 50, 50);
+}
+.navbar-toggler{
+    border: none;
+     outline: none;
+   
+    
+}
+#bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 1000;
+    transition: 0.3s ease;
+    
+    
+}
+/* #navbarSupportedContent > ul{
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+ 
+} */
+
+/* Carousel styling */
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 100vh;
+}
+/* https://www.drjart.co.uk/media/export/cms/editorial/content_blocks/Pore_Remedy_Launch/HP_Banner_2160x975_Pore_Remedy_Product.jpg */
+#firstBG {
+  background-image: url('https://www.drjart.com/media/export/cms/homepage/HP_Cica50_2160x975.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* https://www.drjart.com/media/export/cms/homepage/HP_Seashell_2160x975.jpg */
+
+#secondBG {
+  background-image: url('https://www.drjart.com/media/export/cms/homepage/HP_Seashell_2160x975.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+/* https://www.drjart.co.uk/media/export/cms/editorial/content_blocks/Pore_Remedy_Launch/HP_Banner_2160x975_01.jpg */
+#thirdBG {
+  background-image: url('https://www.drjart.co.uk/media/export/cms/editorial/content_blocks/Pore_Remedy_Launch/HP_Banner_2160x975_Pore_Remedy_Product.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 0px) {
+  #introCarousel {
+    /* margin-top: -58.59px; */
+
+  }
+}
+
+/* 
+       @media (min-width: 576px) {
+        .navbar .nav-link {
+        color: rgb(60, 193, 91) ;
+      }
+      } 
+
+       .navbar .nav-link {
+        color: #fff;
+      }  
+
+       .navbar-nav-scroll {
+        overflow: visible;
+      }   */
+
+ .blog{
+    background-color: antiquewhite;
+ }
+
+ #banner{
+    background-image: url('https://www.drjart.com/media/export/cms/homepage/HP_Holiday_CeraCream_2160x975.jpg');
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    display: flex; 
+    flex-direction: column; 
+     justify-content:flex-end;
+    align-items: flex-end; 
+
+ }
