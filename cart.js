@@ -46,18 +46,19 @@ closeCart();
 openCart();
 
 
-
+{/* <input id="quantity" min="0" name="quantity" value="${item.quantity}" type="number"
+class="form-control form-control-sm  text-center " />  */}
 
 function openCart() {
-
-    let storageItems = JSON.parse(localStorage.getItem("drJart"));
+product.innerHTML=""
+   let storageItems = JSON.parse(localStorage.getItem("drJart"));
     for (let i = 0; storageItems.length; i++) {
         const item = storageItems[i];
 
-        numOfItems.innerHTML = storageItems.length + " " + "Items";
+        // numOfItems.innerHTML = storageItems.length + " " + "Items";
         console.log(item);
         let  newProduct =  htmlToElement(`
-    
+       
         <div class="row mb-4 d-flex justify-content-between align-items-center">
         <div class="col-md-2 col-lg-2 col-xl-2">
           <img
@@ -65,6 +66,7 @@ function openCart() {
             class="img-fluid rounded-3 " >
         </div>
         <div class="col-md-3 col-lg-3 col-xl-3">
+      
           <h6 class="text-muted">${item.name}</h6>
           
         </div>
@@ -74,8 +76,8 @@ function openCart() {
             <i class="fas fa-minus"></i>
           </button>
 
-          <input id="form1" min="0" name="quantity" value="${item.quantity}" type="number"
-            class="form-control form-control-sm  text-center " />
+
+          <p id="cardQ${item.id}"> ${item.quantity}</p>
 
           <button class="btn btn-link px-2" name="quantity"
           onclick="incrementItemQuantity(${item.id})">
@@ -90,8 +92,42 @@ function openCart() {
         </div>
       </div>
 
-    `); // kreiram html od stringot za da go appendovam na modalot
+    `); 
     product.append(newProduct);
     }
 }
 
+function incrementItemQuantity(id) {
+  let item = drJart.find((el) => el.id === id);
+  item.quantity++;
+  console.log(id)
+ document.getElementById("cardQ"+id ).innerText = item.quantity;
+  console.log(item.quantity)
+  localStorage.setItem("drJart", JSON.stringify(drJart));
+
+}
+
+function decrementItemQuantity(id)
+ {
+  let item = drJart.find((el) => el.id === id);
+  if (item.quantity === 1) {
+    if (confirm("Are you sure ?")) {
+      drJart = drJart.filter((el) => id !== el.id);
+      document.getElementById(`${id}`).remove();
+   
+    }
+  } else {
+    item.quantity--;
+    console.log(id)
+    console.log(item.quantity)
+    document.getElementById("cardQ" + id).innerText = item.quantity;
+    // document.getElementById(`cardTotal${id}`).innerText = parseInt(item.cardQ * item.cardPrice);
+  }
+  localStorage.setItem("drJart", JSON.stringify(drJart));
+  
+}
+function closeCart() {
+  product.innerHTML = "";
+  // document.getElementById("submit").remove();
+  // itemCount();
+}
